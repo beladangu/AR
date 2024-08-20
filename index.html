@@ -14,8 +14,11 @@
     <a-scene embedded arjs>
       <!-- Define el marcador -->
       <a-marker preset="hiro">
-        <!-- Define un cubo 3D que aparecerá sobre el marcador -->
-        <a-box position="0 0.5 0" rotation="0 45 0" color="blue"></a-box>
+        <!-- Carga y muestra tu modelo 3D -->
+        <a-assets>
+          <a-asset-item id="piramideModel" src="models/prueba1.glb"></a-asset-item>
+        </a-assets>
+        <a-gltf-model src="#piramideModel" scale="0.1 0.1 0.1" position="0 0 0"></a-gltf-model>
       </a-marker>
 
       <!-- Cámara para la vista AR -->
