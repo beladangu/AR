@@ -1,28 +1,24 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>AR.js Example</title>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirámide AR</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/jeromeetienne/AR.js/aframe/build/aframe-ar.js"></script>
-    <style>
-      body { margin: 0; }
-      a-scene { width: 100vw; height: 100vh; }
-    </style>
-  </head>
-  <body>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.7/aframe/build/aframe-ar.js"></script>
+</head>
+<body style="margin: 0; overflow: hidden;">
     <a-scene embedded arjs>
-      <!-- Define el marcador -->
-      <a-marker preset="hiro">
-        <!-- Carga y muestra tu modelo 3D -->
-        <a-assets>
-          <a-asset-item id="piramideModel" src="models/prueba1.glb"></a-asset-item>
-        </a-assets>
-        <a-gltf-model src="#piramideModel" scale="0.1 0.1 0.1" position="0 0 0"></a-gltf-model>
-      </a-marker>
-
-      <!-- Cámara para la vista AR -->
-      <a-entity camera></a-entity>
+        <a-marker preset="hiro">
+            <!-- Importa tu modelo 3D aquí -->
+            <a-gltf-model 
+                src="models/p1.glb" 
+                scale="0.05 0.05 0.05" 
+                position="0 0 0" 
+                rotation="0 0 0">
+            </a-gltf-model>
+        </a-marker>
+        <a-entity camera></a-entity>
     </a-scene>
-  </body>
+</body>
 </html>
