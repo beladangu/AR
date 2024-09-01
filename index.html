@@ -9,12 +9,13 @@
 </head>
 <body style="margin: 0; overflow: hidden;">
     <a-scene embedded arjs>
-        <a-marker preset="hiro">
-            <!-- Importa tu modelo 3D aquí -->
+        <!-- Marcador -->
+        <a-marker type="pattern" url="models/DANMARK.patt">
+            <!-- Modelo 3D -->
             <a-gltf-model 
-                src="models/teocalli.glb" 
+                src="models/teocalliokblend.glb" 
                 scale="0.05 0.05 0.05" 
-                position="0 0.5 0"  
+                position="0 0 0" 
                 rotation="0 0 0">
             </a-gltf-model>
         </a-marker>
