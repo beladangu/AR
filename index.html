@@ -6,28 +6,27 @@
     <title>Bela Dangú</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.7/aframe/build/aframe-ar.js"></script>
-    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <div class="header-content">
-            <img src="models/LOGOBELA.jpeg" alt="Logo" class="logo">
-            <h1>Bela Dangú</h1>
+<body style="margin: 0; padding: 0; overflow: hidden;">
+    <header style="background-color: #f8f9fa; padding: 10px 0; text-align: center;">
+        <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+            <img src="models/LOGOBELA.jpeg" alt="Logo" style="max-width: 80px; height: auto; margin-right: 10px;">
+            <h1 style="font-size: 24px; margin: 0;">Bela Dangú</h1>
         </div>
     </header>
 
-    <a-scene embedded arjs="sourceType: webcam;">
+    <a-scene embedded arjs style="width: 100vw; height: 100vh; display: block;">
         <!-- Marcador personalizado -->
         <a-marker type="pattern" url="models/DANMARK.patt">
             <!-- Modelo 3D pegado al marcador -->
             <a-gltf-model 
                 src="models/teocalli001.glb" 
-                scale="0.5 0.5 0.5" 
+                scale="0.05 0.05 0.05" 
                 position="0 0 0"  
                 rotation="0 0 0">
             </a-gltf-model>
         </a-marker>
-        <a-entity camera position="0 1.6 3"></a-entity>
+        <a-entity camera></a-entity>
     </a-scene>
 
     <!-- Footer removed as requested -->
