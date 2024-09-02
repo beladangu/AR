@@ -1,0 +1,75 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-logo {
+    max-width: 50px; /* Tamaño más pequeño del logo */
+    height: auto;
+}
+
+.footer-texto {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .logo {
+        max-width: 80px;
+    }
+
+    .footer-logo {
+        max-width: 40px; /* Tamaño aún más pequeño en pantallas pequeñas */
+    }
+
+    .footer-texto {
+        font-size: 14px;
+    }
+}
