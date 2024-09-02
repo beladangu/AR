@@ -3,6 +3,13 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+a-scene {
+    width: 100vw;
+    height: 100vh;
+    display: block;
 }
 
 /* Header Styles */
@@ -10,6 +17,8 @@ header {
     background-color: #f8f9fa;
     padding: 10px 0;
     text-align: center;
+    z-index: 1000; /* Ensure header is above the AR scene */
+    position: relative;
 }
 
 .header-content {
@@ -20,7 +29,7 @@ header {
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 80px;
     height: auto;
     margin-right: 10px;
 }
@@ -35,41 +44,36 @@ footer {
     background-color: #f8f9fa;
     padding: 10px 0;
     text-align: center;
+    z-index: 1000; /* Ensure footer is above the AR scene */
+    position: relative;
 }
 
 .footer-content {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
 }
 
 .footer-logo {
-    max-width: 50px; /* Tamaño más pequeño del logo */
+    max-width: 60px;
     height: auto;
 }
 
 .footer-texto {
-    font-size: 16px;
     margin: 0;
 }
 
-/* Responsiveness */
+/* Responsive Adjustments */
 @media (max-width: 600px) {
     h1 {
         font-size: 20px;
     }
 
     .logo {
-        max-width: 80px;
+        max-width: 70px;
     }
 
     .footer-logo {
-        max-width: 40px; /* Tamaño aún más pequeño en pantallas pequeñas */
-    }
-
-    .footer-texto {
-        font-size: 14px;
+        max-width: 50px;
     }
 }
