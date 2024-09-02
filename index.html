@@ -16,17 +16,15 @@
         </div>
     </header>
 
-    <a-scene embedded arjs>
+    <a-scene embedded arjs="sourceType: webcam;">
         <!-- Marcador personalizado -->
         <a-marker type="pattern" url="models/DANMARK.patt">
             <!-- Modelo 3D pegado al marcador -->
             <a-gltf-model 
-    src="models/teocalli001.glb" 
-    scale="0.10 0.10 0.10" 
-    position="0 0 0"  
-    rotation="0 0 0">
-</a-gltf-model>
-
+                src="models/teocalli001.glb" 
+                scale="0.05 0.05 0.05" 
+                position="0 0 0"  
+                rotation="0 0 0">
             </a-gltf-model>
         </a-marker>
         <a-entity camera></a-entity>
